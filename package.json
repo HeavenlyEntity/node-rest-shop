@@ -1,0 +1,26 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "Node.js RESTful API Example and practice (Building a simple shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node-rest-shop"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api",
+    "shop",
+    "example",
+    "practice"
+  ],
+  "author": "Alec Mingione",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
