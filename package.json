@@ -4,6 +4,7 @@
   "description": "Node.js RESTful API Example and practice (Building a simple shop API)",
   "main": "index.js",
   "scripts": {
+    "start": "echo \"Starting server with nodemon\" && nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,10 @@
   "author": "Alec Mingione",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
