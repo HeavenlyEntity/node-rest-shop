@@ -1,9 +1,26 @@
 const express = require('express');
 const app = express();
 const morganLogger = require('morgan');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const productRoutes = require('./API/routes/products');
 const orderRoutes = require('./API/routes/orders');
+
+// mongoose.connect(
+//     'mongodb+srv://admin:' + 
+//         process.env.MONGO_ATLAS_PW +
+//         '@node-rest-shop-e4yqp.mongodb.net/test?retryWrites=true&w=majority',   
+//      {
+//         useMongoClient: true
+//      }
+//     );
+
+mongoose.connect(
+    'mongodb+srv://admin:nodeAdmin@node-rest-shop-e4yqp.mongodb.net/test?retryWrites=true&w=majority',
+    {
+        useNewUrlParser: true
+    }
+ );
 
 app.use(morganLogger('dev'));
 app.use(bodyParser.urlencoded({
