@@ -23,6 +23,7 @@ mongoose.connect(
  );
 
 app.use(morganLogger('dev'));
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
@@ -62,4 +63,3 @@ app.use((error, req, res, next) => {
 
 module.exports = app;
 
-			
